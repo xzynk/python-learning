@@ -34,7 +34,6 @@ Mi objetivo es sentirme cómodo resolviendo problemas con Python y, eventualment
 ## **Herramientas que uso**
 
 - **Python:** Obvio, es el protagonista de este repositorio.  
-- **Obsidian:** Para organizar mis notas y que todo tenga sentido.  
 - **Git y GitHub:** Para mantener todo versionado y accesible en cualquier lugar.  
 
 ## **Cómo explorar este repo**
