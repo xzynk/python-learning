@@ -16,11 +16,8 @@
   - Mi enfoque y solución paso a paso.
   - (Algunos tienen pruebas para validar las soluciones).
 
-- **`resources/`**  
-  Recursos útiles: guías rápidas, enlaces interesantes y cualquier cosa que me haya servido para aprender.
-
-- **`notes/`**  
-  Mis apuntes personales. Aquí explico conceptos como estructuras de datos, funciones avanzadas, programación orientada a objetos y mucho más.
+- **`conceptos/`**  
+  Conceptos basicos de cada tema que vaya explorando, los anoto para tener siempre referencia.
 
 ## **¿Por qué hago esto?**
 
