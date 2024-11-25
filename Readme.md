@@ -17,7 +17,7 @@
   - (Algunos tienen pruebas para validar las soluciones).
 
 - **`conceptos/`**  
-  Conceptos basicos de cada tema que vaya explorando, los anoto para tener siempre referencia.
+  Conceptos básicos de cada tema que vaya explorando, los anoto para tener siempre referencia.
 
 ## **¿Por qué hago esto?**
 

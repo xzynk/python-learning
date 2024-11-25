@@ -1,12 +1,14 @@
-En este reto analizamos el uso de fechas para consultar la teoría puedes hacerlo [[Fechas|aqui]]
+# 14 FECHAS
 
- ## EJERCICIO:
+En este reto analizamos el uso de fechas para consultar la teoría puedes hacerlo [[FECHAS|aqui]]
+
+ **EJERCICIO:**
  Crea dos variables utilizando los objetos fecha (date, o semejante) de tu lenguaje:
  - Una primera que represente la fecha (día, mes, año, hora, minuto, segundo) actual.
  - Una segunda que represente tu fecha de nacimiento (te puedes inventar la hora).
  - Calcula cuántos años han transcurrido entre ambas fechas.
  
- ## DIFICULTAD EXTRA (opcional):
+ **DIFICULTAD EXTRA (opcional):**
  Utilizando la fecha de tu cumpleaños, formatéala y muestra su resultado de 10 maneras diferentes. Por ejemplo:
  
  - Día, mes y año.
@@ -15,3 +17,5 @@ En este reto analizamos el uso de fechas para consultar la teoría puedes hacerl
  - Día de la semana.
  - Nombre del mes.
  - (lo que se te ocurra...)
+
+#### Reto sacado de: https://retosdeprogramacion.com/roadmap/
