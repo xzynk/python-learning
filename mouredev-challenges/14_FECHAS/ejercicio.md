@@ -1,6 +1,6 @@
 # 14 FECHAS
 
-En este reto analizamos el uso de fechas para consultar la teoría puedes hacerlo [aqui](FECHAS.md)
+En este reto analizamos el uso de fechas para consultar la teoría puedes hacerlo [aqui](../../conceptos/FECHAS.md)
 
  **EJERCICIO:**
  Crea dos variables utilizando los objetos fecha (date, o semejante) de tu lenguaje:

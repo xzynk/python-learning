@@ -1,6 +1,6 @@
 # 03 ESTRUCTURAS DE DATOS
 
-Para consultar la teoría puedes hacerlo [aqui](ESTRUCTURAS%20DE%20DATOS.md)
+Para consultar la teoría puedes hacerlo [aqui](../../conceptos/ESTRUCTURAS%20DE%20DATOS.md)
 
 **EJERCICIO:**
 - Muestra ejemplos de creación de todas las estructuras soportadas por defecto en tu lenguaje.

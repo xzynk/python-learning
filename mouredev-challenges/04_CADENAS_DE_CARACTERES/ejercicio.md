@@ -1,6 +1,6 @@
 # 04 CADENAS DE CARACTERES
 
-Para consultar la teoría puedes hacerlo [aqui](CADENA%20DE%20CARACTERES.md)
+Para consultar la teoría puedes hacerlo [aqui](../../conceptos/CADENA%20DE%20CARACTERES.md)
 
 **EJERCICIO:**
 Muestra ejemplos de todas las operaciones que puedes realizar con cadenas de caracteres
