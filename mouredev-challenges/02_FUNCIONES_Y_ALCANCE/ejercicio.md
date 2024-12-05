@@ -1,11 +1,11 @@
 # 02 FUNCIONES Y ALCANCE
 
-Para consultar la teoría puedes hacerlo [aqui](../../conceptos/FUNCIONES%20Y%20ALCANCE.md)
+Para consultar la teoría puedes hacerlo [aqui](../../conceptos/FUNCIONES_Y_ALCANCE.md)
 
 **EJERCICIO:**
 - Crea ejemplos de funciones básicas que representen las diferentes posibilidades del lenguaje: Sin parámetros ni retorno, con uno o varios parámetros, con retorno...
 - Comprueba si puedes crear funciones dentro de funciones.
-- Utiliza algún ejemplo de [funciones ya creadas en el lenguaje](../../conceptos/FUNCIONES%20PREDIFINIDAS.md).
+- Utiliza algún ejemplo de [funciones ya creadas en el lenguaje](../../conceptos/FUNCIONES_PREDIFINIDAS.md).
 - Pon a prueba el concepto de variable LOCAL y GLOBAL.
 - Debes hacer print por consola del resultado de todos los ejemplos. (y tener en cuenta que cada lenguaje puede poseer más o menos posibilidades)
 

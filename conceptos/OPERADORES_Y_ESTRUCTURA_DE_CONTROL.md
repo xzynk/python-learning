@@ -1,3 +1,5 @@
+# Operadores y Estructura de Control
+
 Los operadores en python son simbolos que permiten realizar operaciones sobre variables y valores.
 
 ---
@@ -84,6 +86,23 @@ elif condicion2
 	#Codigo si condicion2 es TRUE
 else
 	#Codigo si ninguna condicion es TRUE
+```
+
+###### b) match-case (Python 3.10+)
+```python
+def calculadora(operacion, a, b):
+    match operacion:
+        case "suma":
+            return a + b
+        case "resta":
+            return a - b
+        case "multiplicacion":
+            return a * b
+        case _:
+            return "Operación no válida"
+
+print(calculadora("suma", 10, 5))           # 15
+print(calculadora("division", 10, 5))      # Operación no válida
 ```
 
 #### 2 - Estructuras iterativas

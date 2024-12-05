@@ -1,3 +1,5 @@
+# Fechas
+
 Python ofrece varias maneras de trabajar con fechas y horas, proporcionando gran flexibilidad para hacer cálculos, formatear, comparar y manipular datos temporales. Aquí están los aspectos claves sobre fechas en Python:
 
 # 1- Módulos principales para fechas y tiempos
@@ -26,7 +28,7 @@ from datetime import datetime, date, time, timedelta
 
 Puedes extraer partes de una fecha usando atributos:
 
-```Python 
+```Python
 now = datetime.now()
 year = now.year #Año actual
 month = now.month #Mes actual
@@ -39,7 +41,7 @@ second = now.second #Segundo actual
 ##### Comparación de fechas
 Las fechas se puede comparar usando operadores como < , > , == , etc.
 
-```python 
+```python
 date1 = datetime(2024, 1, 1)
 date2 = datetime(2023, 1, 1)
 print(date1 > date2)  # True, ya que date1 es después de date2
@@ -50,7 +52,7 @@ print(date1 > date2)  # True, ya que date1 es después de date2
 Para convertir fechas y horas a *strings* y viceversa, *strftime* y *strptime* son útiles:
 
 - ##### Formato a strings(strftime)
-```Python 
+```Python
 formatted_date = now.strftime("%Y-%m-%d %H:%M:%S")  # "2024-10-16 15:30:00"
 ```
 
@@ -62,17 +64,19 @@ formatted_date = now.strftime("%Y-%m-%d %H:%M:%S")  # "2024-10-16 15:30:00"
 - %M: Minuto (00 a 59)
 - %S: Segundo (00 a 59)
 
+Extendemos mas estos codigos [aqui](FORMATOS_DE_FECHA.md)
+
 - ##### Conversión de string a fecha (strptime)
 ```python
 date_string = "2024-10-16 15:30:00"
 parsed_date = datetime.strptime(date_string, "%Y-%m-%d %H:%M:%S")
 ```
 
-# 4- Operaciones con timedata 
+# 4- Operaciones con timedata
 
 Para hacer cálculos de tiempo (sumar/restar días,horas,etc.) *timedelta* es el tipo ideal.
 
-```Python 
+```Python
 now = datetime.now()
 one_week_later = now + timedelta(weeks=1)  # Agrega 7 días
 two_days_before = now - timedelta(days=2)  # Resta 2 días
@@ -81,14 +85,14 @@ two_days_before = now - timedelta(days=2)  # Resta 2 días
 **Diferencia entre fechas**
 La resta de dos fechas da un *timedelta:*
 
-```Python 
+```Python
 date1 = datetime(2024, 1, 10)
 date2 = datetime(2024, 1, 1)
 diff = date1 - date2
 print(diff.days)  # 9 días de diferencia
 ```
 
-# 5- Zonas Horarias con pytz 
+# 5- Zonas Horarias con pytz
 
 Python no incluye zonas horarias por defecto, pero puedes agregar soporte mediante pytz (requiere instalación).
 
@@ -111,7 +115,7 @@ print(now_est)
 La *epoch* es la cantidad de segundos desde el 1 de enero de 1970.
 
 **Obtener época actual**
-```python 
+```python
 epoch_time = datetime.now().timestamp()
 ```
 
@@ -124,7 +128,7 @@ date_from_epoch = datetime.fromtimestamp(epoch_time)
 
 La librería *dateutil* permite trabajar con fechas relativas (como “el próximo martes”).
 
-```Python 
+```Python
 from dateutil.relativedelta import relativedelta
 # Fecha un año adelante
 next_year = datetime.now() + relativedelta(years=1)

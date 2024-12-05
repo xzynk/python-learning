@@ -1,6 +1,6 @@
 # 01 OPERADORES Y ESTRUCTURAS DE CONTROL
 
-Para consultar la teoría puedes hacerlo [aqui](../../conceptos/OPERADORES%20Y%20ESTRUCTURAL%20DE%20CONTROL.md)
+Para consultar la teoría puedes hacerlo [aqui](../../conceptos/OPERADORES_Y_ESTRUCTURA_DE_CONTROL.md)
 
 **EJERCICIO:**
 Crea ejemplos utilizando todos los tipos de operadores de tu lenguaje:

@@ -1,10 +1,12 @@
 # 13 PRUEBAS UNITARIAS
 
- **EJERCICIO:**
- Crea una función que se encargue de sumar dos números y retornar su resultado.
+Para consultar la teoría puedes hacerlo [aqui](../../conceptos/PRUEBAS_UNITARIAS.md)
+
+ **EJERCICIO:**  
+ Crea una función que se encargue de sumar dos números y retornar su resultado.  
  Crea un test, utilizando las herramientas de tu lenguaje, que sea capaz de determinar si esa función se ejecuta correctamente.
  
- **DIFICULTAD EXTRA (opcional):**
+ **DIFICULTAD EXTRA (opcional):**  
  Crea un diccionario con las siguientes claves y valores:
 - **"name":** "Tu nombre"
 - **"age":** "Tu edad"

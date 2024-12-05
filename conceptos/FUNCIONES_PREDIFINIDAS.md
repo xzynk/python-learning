@@ -1,3 +1,5 @@
+# ALGUNAS FUNCIONES PREDEFINIDAS
+
 ```Python
 print() #Imprime valores en la consola
 len() # Devuelve la longitud de un objeto

@@ -1,3 +1,5 @@
+# Sintaxis, Variables y Tipos de Datos
+
 Los comentarios suelen llevar el simbolo **#**
 Los comentarios en multilinea en si no existen pero existen los **DOCSTRING** se coloca al inicio del bloque de código que se documenta. Se usan para documentar funcionaes, clases y modulos.
 

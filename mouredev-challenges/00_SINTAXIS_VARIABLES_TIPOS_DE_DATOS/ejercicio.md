@@ -1,10 +1,8 @@
 # 00 SINTAXIS, VARIABLES, TIPOS DE DATOS Y HOLA MUNDO
 
-En este primer reto analizamos un poco de teoria de como funcionan las variables y tipos de datos para mas información sobre el tema [aqui](../../conceptos/SINTAXIS%20VARIABLES%20Y%20TIPOS%20DE%20DATOS.md)
+En este primer reto analizamos un poco de teoria de como funcionan las variables y tipos de datos para mas información sobre el tema [aqui](../../conceptos/SINTAXIS_VARIABLES_Y_TIPOS_DE_DATOS.md)
 
 **¿Preparad@ para aprender o repasar el lenguaje de programación que tú quieras?**
-Recuerda que todas las instrucciones de participación están en el [repositorio de GitHub.](https://github.com/mouredev/roadmap-retos-programacion/blob/main/Roadmap/00%20-%20SINTAXIS%2C%20VARIABLES%2C%20TIPOS%20DE%20DATOS%20Y%20HOLA%20MUNDO/ejercicio.md)
- 
 Lo primero... ¿Ya has elegido un lenguaje? No todos son iguales, pero sus fundamentos suelen ser comunes. Este primer reto te servirá para familiarizarte con la forma de participar enviando tus propias soluciones.
  
  **EJERCICIO:**
