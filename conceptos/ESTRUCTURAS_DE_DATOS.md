@@ -5,7 +5,6 @@
 ```python
 mi_lista = [1,2,3]
 ```
-
 - Crea una secuencia ordenada de elementos
 
 ###### Operaciones Importantes
