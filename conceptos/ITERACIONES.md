@@ -87,10 +87,10 @@ else:
 
 #### 5 - Iteradores e iterables
 
-**¿Que es un iterable?**
+**¿Que es un iterable?**  
 Un objeto es iterable si se puede recorrer con un bucle `for`. Ejemplos: listas, cadenas, diccionarios, conjuntos, tuplas.
 
-**¿Que es un iterador?**
+**¿Que es un iterador?**  
 Un **iterador** es un objeto que produce elementos uno a uno al llamar a su metodo especial `__next__()`
 
 **Convertir un iterable en iterador**
@@ -126,7 +126,7 @@ for num in counter:
 
 #### 6 - Comprensiones
 
-**Compresion de listas**
+**Compresion de listas**  
 Es una forma concisa de crear listas usando bucles.
 
 **Sintaxis:**
@@ -151,7 +151,7 @@ unique_squares = {x**2 for x in [-2, -1, 0, 1, 2]}
 print(unique_squares) #Output: {0,1,4}
 ```
 
-**Compresion de generadores**
+**Compresion de generadores**  
 Usa parentesis en lugar de corchetes para crear un generador:
 ```python
 gen = (x**2 for x in range(10))
@@ -171,7 +171,7 @@ El modulo `itertools` proporciona herramientas avanzadas para iteraciones.
 | `itertools.repeat()`       | Repite un valor un número especificado de veces (o infinitamente). |
 | `itertools.chain()`        | Combina múltiples iterables en uno solo.                           |
 | `itertools.permutations()` | Genera todas las permutaciones posibles de un iterable.            |
-| `itertools.combinations()` | Genera combinaciones únicas de un iterable.                        |
+| `itertools.combinations()` | Genera combinaciones únicas de un iterable.                        |      
 **Ejemplo**
 ```python
 from itertools import count, cycle, permutations
@@ -189,7 +189,7 @@ for p in permutations("AB",2):
 
 #### 8 - Manejo de multiples iterables
 
-`zip()`
+`zip()`  
 Une elementos de multiples iterables en tuplas:
 ```python
 names = ["Alice", "Bob"]
@@ -199,7 +199,7 @@ for name, age in zip(names, ages):
 	print(f"{name} is {age} years old")
 ```
 
-`enumerate()`
+`enumerate()`  
 Devuelve indices juntos con elementos:
 ```python
 fruits = ["apple", "banana", "cherry"]

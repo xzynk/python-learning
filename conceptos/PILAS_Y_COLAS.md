@@ -1,7 +1,9 @@
 # Pilas y Colas
 
 #### Pilas (stack)
-Una pila es una estrcutura de datos que sigue el principio **LIFO (Last in, first out)**, lo que significa que el ultimo elemento que entra es el primero en salir.
+
+Una pila es una estrcutura de datos que sigue el principio **LIFO (Last in, first out)**, lo que significa que el ultimo
+elemento que entra es el primero en salir.
 
 - **Operaciones Basicas**
 	1. push(elemento): Añadir un elemento al tope de la pila.
@@ -13,20 +15,20 @@ Una pila es una estrcutura de datos que sigue el principio **LIFO (Last in, firs
 ```python
 stack = []
 
-#Agregar elementos
-stack.append(10) #Push
+# Agregar elementos
+stack.append(10)  # Push
 stack.append(20)
 stack.append(30)
 
 # Ver el tope
-print(stack[-1]) #Output: 30 (peek)
+print(stack[-1])  # Output: 30 (peek)
 
-#Sacar elemento
-stack.pop() # Elimina 30
-stack.pop() # Elimina 20
+# Sacar elemento
+stack.pop()  # Elimina 30
+stack.pop()  # Elimina 20
 
-#Ver si esta vacia
-print(len(stack) == 0) # Output: False
+# Ver si esta vacia
+print(len(stack) == 0)  # Output: False
 ```
 
 - **Aplicaciones de las Pilas:**
@@ -36,12 +38,14 @@ print(len(stack) == 0) # Output: False
 	- **Deshacer / Rehacer:** Los comando se apilan y desapilan segun el flujo de cambios.
 
 #### Colas (Queue)
-Una **cola** es una estructura de datos que sigue el principio **FIFO (first in, first out)**, es decir, el primer elemento que entra es el primer elemento en salir.
+
+Una **cola** es una estructura de datos que sigue el principio **FIFO (first in, first out)**, es decir, el primer
+elemento que entra es el primer elemento en salir.
 
 - **Operaciones Basicas**
 	1. enqueue(elemento): Añadir un elemento al final de la cola.
 	2. dequeue(): Eliminar y devolver el primer elemento de la cola.
-	3. peek() o front(): OBtener el primer elemento sin eliminarlo.
+	3. peek() o front(): Obtener el primer elemento sin eliminarlo.
 	4. is_empty(): Verificar si la cola esta vacia.
 	5. size(): Devolver el numero de elementos en la cola.
 
@@ -50,25 +54,26 @@ from collections import deque
 
 queue = deque()
 
-#Agregar elementos
-queue.append(10) #enqueue
+# Agregar elementos
+queue.append(10)  # enqueue
 queue.append(20)
 queue.append(30)
 
-#Ver el primer elemento
-print(queue[0]) #Output: 10 (peek)
+# Ver el primer elemento
+print(queue[0])  # Output: 10 (peek)
 
-#Sacar elementos
-queue.popleft() #Elimina 10
-queue.popleft() #Elimina 20
+# Sacar elementos
+queue.popleft()  # Elimina 10
+queue.popleft()  # Elimina 20
 
-#Ver si esta vacia
-print(len(queue) == 0) #Output: False
+# Ver si esta vacia
+print(len(queue) == 0)  # Output: False
 ```
 
 - **Tipos especiales de Cola**
 	1. **Cola Circular:** La cola tiene un tamaño fijo y los indices se 'envuelven' cuando llegan al final de la cola.
 	2. **Cola de Prioridad:** los elementos se procesan en funcion a su prioridad, no en el orden que llegaron.
 	3. **Deque (Double - ended Queue):** Permite agregar elementos tanto al inicio como al final de la cola..
-	
-*El mas eficiente es con deque del modulo collections, ya que las operaciones de añadir y eliminar elementos en una lista son costosas.*
+
+*El mas eficiente es con deque del modulo collections, ya que las operaciones de añadir y eliminar elementos en una
+lista son costosas.*
