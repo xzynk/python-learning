@@ -4,7 +4,7 @@ En Python, los **conjuntos** (sets) son una estructura de datos integrada que re
 **desordenada** y **mutable** de elementos únicos. Son utiles para operaciones como eliminar duplicados de una lista,  
 realizar intersecciones, uniones y deferencias entre colecciones.
 
-### Caracteristicas principales de los conjuntos
+### Características principales de los conjuntos
 
 1. **Elementos unicos:** Los conjuntos no permiten elementos duplicados. Si se intenta añadir un duplicado, se ignorara.
 2. **Desordenados:** Los elementos no tienen un orden fijo
