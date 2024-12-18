@@ -1,24 +1,29 @@
 # Asincronia
 
-La asincronia nos permite ejecutar tareas concurrentemente, lo que es util en programa que realizan multiples operaciones que podrian esperar por recursos externos, como llamadas a bases de datos, APIs o lectura de archivos.
+La asincronia nos permite ejecutar tareas concurrentemente, lo que es util en programa que realizan multiples
+operaciones que podrian esperar por recursos externos, como llamadas a bases de datos, APIs o lectura de archivos.
 
 ## 1. Modulos Principales para Asincronia
 
 `asyncio`
-- Es el modulo principal de Python para manejar programacion asincronica.
+
+- Es el modulo principal de Python para manejar programación asincronica.
 - Introduce el concepto de **couroutines**, eventos, bucles de eventos y tareas.
 
 `concurrent.futures`
+
 - Se utiliza para ejecutar tareas en subprocesos o procesos separados.
-- Compatible con programacion concurrente basada en hilos o multiprocesos.
+- Compatible con programación concurrente basada en hilos o multiprocesos.
 
 **Librerias externas**
+
 - `aiohttp`: Para realizar peticiones HTTP asincronicas.
-- `trio` y `curio`: Librerias avanzadas para programacion asincronica.
+- `trio` y `curio`: Librerias avanzadas para programación asincronica.
 
 ## 2. Conceptos clave
 
 #### Coroutines
+
 - Funciones definidas con `async def`. Representan tareas asincronicas
 - Se ejecutan usando `await`.
 
@@ -34,6 +39,7 @@ async def say_hello():
 ## 3. Funciones y Estructuras Asincronicas
 
 #### Crear Coroutines
+
 ```python
 async def main():
     print("Start")
@@ -46,6 +52,7 @@ asyncio.run(main())
 ```
 
 #### Correr Tareas Concurrentes
+
 ```python
 async def task(name, delay):
 	await asyncio.sleep(delay)
@@ -70,12 +77,15 @@ Task C completed after 3 seconds
 ```
 
 **Crear y ejecutar Tareas**
+
 - `asyncio.create_task()`: Inicia una tarea asincronica.
 - `asyncio.gather()`: Ejecuta multiples *coroutines* concurrentemente.
 - `asyncio.run()`: Inicia el bucle de eventos y ejecuta la *coroutine* principal.
 
 ## 4. Sincronizacion en Asincronia
+
 #### Semaforos (`asyncio.Semaphore`)
+
 - Limita el numero de tareas concurrentes
 
 ```python
@@ -93,6 +103,7 @@ asyncio.run(main())
 ```
 
 #### Locks (`asyncio.Lock`)
+
 - Garantiza que solo una tarea acceda a un recurso compartido.
 
 ```python
@@ -105,6 +116,7 @@ async def critical_section():
 ```
 
 ## 5. Manejo de Excepciones en Asincronia
+
 Usa bloques `try-except` para capturar errores en tareas asincronicas.
 
 ```python
@@ -123,6 +135,7 @@ asyncio.run(main())
 ## 6. Integracion con Funciones Sincronicas
 
 **Ejecutar funciones sincronicas en un hilo separado**
+
 ```python
 import asyncio
 import time

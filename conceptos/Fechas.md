@@ -1,13 +1,16 @@
 # Fechas
 
-Python ofrece varias maneras de trabajar con fechas y horas, proporcionando gran flexibilidad para hacer cálculos, formatear, comparar y manipular datos temporales. Aquí están los aspectos claves sobre fechas en Python:
+Python ofrece varias maneras de trabajar con fechas y horas, proporcionando gran flexibilidad para hacer cálculos,
+formatear, comparar y manipular datos temporales. Aquí están los aspectos claves sobre fechas en Python:
 
 # 1- Módulos principales para fechas y tiempos
 
-- **datetime**: la librería principal para trabajar con fechas y horas. Ofrece tipos como date,time, datetime, timedelta.
+- **datetime**: la librería principal para trabajar con fechas y horas. Ofrece tipos como date,time, datetime,
+  timedelta.
 - **time**: orientada al manejo de tiempos en formato de época (epoch) y funciones de reloj.
 - **calendar:** ofrece funciones para manejar calendarios.
-- **dateutil** (externo): extensión que facilita la manipulación de fechas y tiempos, permite manejo avanzado de zonas horarias.
+- **dateutil** (externo): extensión que facilita la manipulación de fechas y tiempos, permite manejo avanzado de zonas
+  horarias.
 
 # 2- Usando datetime
 
@@ -30,15 +33,16 @@ Puedes extraer partes de una fecha usando atributos:
 
 ```Python
 now = datetime.now()
-year = now.year #Año actual
-month = now.month #Mes actual
-dar = now.day #Dia actual
-hour = now.hour #Hora actual
-minute = now.minute #Minuto actual
-second = now.second #Segundo actual
+year = now.year  # Año actual
+month = now.month  # Mes actual
+dar = now.day  # Dia actual
+hour = now.hour  # Hora actual
+minute = now.minute  # Minuto actual
+second = now.second  # Segundo actual
 ```
 
 ##### Comparación de fechas
+
 Las fechas se puede comparar usando operadores como < , > , == , etc.
 
 ```python
@@ -52,11 +56,13 @@ print(date1 > date2)  # True, ya que date1 es después de date2
 Para convertir fechas y horas a *strings* y viceversa, *strftime* y *strptime* son útiles:
 
 - ##### Formato a strings(strftime)
+
 ```Python
 formatted_date = now.strftime("%Y-%m-%d %H:%M:%S")  # "2024-10-16 15:30:00"
 ```
 
 ***Principales códigos de formato:***
+
 - %Y: Año Completo(2024)
 - %m: Mes(01-12)
 - %d: Día (01-31)
@@ -64,9 +70,10 @@ formatted_date = now.strftime("%Y-%m-%d %H:%M:%S")  # "2024-10-16 15:30:00"
 - %M: Minuto (00 a 59)
 - %S: Segundo (00 a 59)
 
-Extendemos mas estos codigos [aqui](FORMATOS_DE_FECHA.md)
+Extendemos más estos codigos [aquí](FORMATOS_DE_FECHA.md)
 
 - ##### Conversión de string a fecha (strptime)
+
 ```python
 date_string = "2024-10-16 15:30:00"
 parsed_date = datetime.strptime(date_string, "%Y-%m-%d %H:%M:%S")
@@ -115,11 +122,13 @@ print(now_est)
 La *epoch* es la cantidad de segundos desde el 1 de enero de 1970.
 
 **Obtener época actual**
+
 ```python
 epoch_time = datetime.now().timestamp()
 ```
 
 **Convertir desde época a fecha**
+
 ```python
 date_from_epoch = datetime.fromtimestamp(epoch_time)
 ```
@@ -130,6 +139,7 @@ La librería *dateutil* permite trabajar con fechas relativas (como “el próxi
 
 ```Python
 from dateutil.relativedelta import relativedelta
+
 # Fecha un año adelante
 next_year = datetime.now() + relativedelta(years=1)
 # Fecha el próximo mes

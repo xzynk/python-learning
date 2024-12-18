@@ -1,10 +1,11 @@
 # Formatos de Fecha en Python
+
 Extendamos un poco cuales son los formatos de Fecha
 
 #### Códigos relacionados con la fecha
 
-| **Codigo** |                    **Significado**                    |                    **Ejemplo**                    |
-| :--------- | :---------------------------------------------------: | :-----------------------------------------------: |
+| **Código** |                    **Significado**                    |                    **Ejemplo**                    |
+|:-----------|:-----------------------------------------------------:|:-------------------------------------------------:|
 | `%a`       |         Nombre abreviado del día de la semana         |                   `Sun`, `Mon`                    |
 | `%A`       |         Nombre completo del día de la semana          |                `Sunday`, `Monday`                 |
 | `%w`       |            Día de la semana (0 = Domingo)             |                `0`, `1`, ..., `6`                 |
@@ -24,15 +25,15 @@ Extendamos un poco cuales son los formatos de Fecha
 
 #### Codigos relacionados con la hora
 
-| **Codigo** |                **Significado**                |                    **Ejemplo**                    |
-| :--------  | :-------------------------------------------: | :-----------------------------------------------: |
-|    `%H`    |      Hora (24 horas) con ceros iniciales      |                    `00`, `23`                     |
-|    `%I`    |      Hora (12 horas) con ceros iniciales      |                    `01`, `12`                     |
-|    `%p`    |                    AM o PM                    |                    `AM`, `PM`                     |
-|    `%M`    |          Minutos con ceros iniciales          |                    `00`, `59`                     |
-|    `%S`    |         Segundos con ceros iniciales          |                    `00`, `59`                     |
-|    `%f`    |       Microsegundos con ceros iniciales       |                `000000`, `999999`                 |
-|    `%z`    |              Desplazamiento UTC               |                 `+0000`, `-0400`                  |
-|    `%Z`    |           Nombre de la zona horaria           |                `UTC`, `EST`, `CST`                |
-|    `%X`    |             Hora local (formato)              | `14:02:00` (depende de la configuración regional) |
-|    `%s`    | Timestamp en segundos desde Epoch (Unix Time) |                   `1638727320`                    |
+| **Código** |                **Significado**                |                    **Ejemplo**                    |
+|:-----------|:---------------------------------------------:|:-------------------------------------------------:|
+| `%H`       |      Hora (24 horas) con ceros iniciales      |                    `00`, `23`                     |
+| `%I`       |      Hora (12 horas) con ceros iniciales      |                    `01`, `12`                     |
+| `%p`       |                    AM o PM                    |                    `AM`, `PM`                     |
+| `%M`       |          Minutos con ceros iniciales          |                    `00`, `59`                     |
+| `%S`       |         Segundos con ceros iniciales          |                    `00`, `59`                     |
+| `%f`       |       Microsegundos con ceros iniciales       |                `000000`, `999999`                 |
+| `%z`       |              Desplazamiento UTC               |                 `+0000`, `-0400`                  |
+| `%Z`       |           Nombre de la zona horaria           |                `UTC`, `EST`, `CST`                |
+| `%X`       |             Hora local (formato)              | `14:02:00` (depende de la configuración regional) |
+| `%s`       | Timestamp en segundos desde Epoch (Unix Time) |                   `1638727320`                    |
