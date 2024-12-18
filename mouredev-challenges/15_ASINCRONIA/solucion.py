@@ -6,9 +6,9 @@ from datetime import datetime
 
 # Ejercicio
 async def my_async_function(name, wait_time):
-    print(f"La funcion {name} empieza: {obtener_hora_minuto()}")
+    print(f"La función {name} empieza: {obtener_hora_minuto()}")
     await asyncio.sleep(wait_time)
-    print(f"La funcion {name} termina: {obtener_hora_minuto()}")
+    print(f"La función {name} termina: {obtener_hora_minuto()}")
 
 
 def obtener_hora_minuto():

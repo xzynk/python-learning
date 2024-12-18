@@ -17,10 +17,14 @@ mi_lista.reverse()  # Revertir lista
 print(f"mi_lista.reverse(): {mi_lista}")
 mi_lista.sort()  # Ordenar lista
 print(f"mi_lista.sort(): {mi_lista}")
-print(f"mi_lista.pop(5): {mi_lista.pop(5)}")  # Sacamos un elemento de la lista y la retornamos
+print(
+    f"mi_lista.pop(5): {mi_lista.pop(5)}"
+)  # Sacamos un elemento de la lista y la retornamos
 print(f"Mi lista: {mi_lista}")
 print(f"len(mi_lista): {len(mi_lista)}")  # Verifica la longitud
-print(f"mi_lista.count(7): {mi_lista.count(7)}")  # Contamos cuantas veces aparece cierto valor
+print(
+    f"mi_lista.count(7): {mi_lista.count(7)}"
+)  # Contamos cuantas veces aparece cierto valor
 print(type(mi_lista))
 print("\n")
 
@@ -34,7 +38,9 @@ print(f"mi_tupla[2] : {mi_tupla[2]}")  # Acceso a Elemento
 print("a,b,c,d = mi_tupla")
 a, b, c, d = mi_tupla  # Desempaquetar
 print(f"a : {a}, b : {b}, c : {c}, d : {d}")
-print(f"mi_tupla.count(20): {mi_tupla.count(20)}")  # Contamos cuantas veces aparece cierto valor
+print(
+    f"mi_tupla.count(20): {mi_tupla.count(20)}"
+)  # Contamos cuantas veces aparece cierto valor
 print(type(mi_tupla))
 print("\n")
 
@@ -44,7 +50,9 @@ print("3 - CONJUNTOS (SET)")
 mi_conjunto = {1, 2, 3, 4, 5}
 print(f"Mi conjunto: {mi_conjunto}")
 mi_conjunto.add(6)  # Añadir elemento
-mi_conjunto.add(6)  # No añade el elemento nuevamente, los sets solo tienen un elemento unico
+mi_conjunto.add(
+    6
+)  # No añade el elemento nuevamente, los sets solo tienen un elemento unico
 print(f"mi_conjunto.add(6): {mi_conjunto}")
 mi_conjunto.discard(9)  # Elimina el elemento si no lo encuentra no genera error
 print(f"mi_conjunto.discard(9): {mi_conjunto}")
@@ -69,23 +77,33 @@ print("\n")
 # 4 - DICCIONARIO
 # Un diccionario es una colección desordenada de pares clave-valor
 print("4 - DICCIONARIO")
-mi_diccionario = {'nombre': 'Carlos', 'edad': 25}
+mi_diccionario = {"nombre": "Carlos", "edad": 25}
 print(f"Mi diccionario: {mi_diccionario}")
 print(f"mi_diccionario['nombre'] : {mi_diccionario['nombre']}")  # Acceso a los valores
 print(f"mi_diccionario.get('edad') : {mi_diccionario.get('edad')}")
 print(f"mi_diccionario['edad'] : {mi_diccionario['edad']}")
-mi_diccionario['edad'] = 55  # Añadir o modificar valores
-mi_diccionario.update({'nombre': 'Cesar'})
+mi_diccionario["edad"] = 55  # Añadir o modificar valores
+mi_diccionario.update({"nombre": "Cesar"})
 print(f"mi_diccionario.update({{'nombre': 'Cesar'}}): {mi_diccionario})")
 print(f"mi_diccionario['edad'] = 55 : {mi_diccionario}")
-mi_diccionario['dni'] = 67859301
+mi_diccionario["dni"] = 67859301
 print(f"mi_diccionario['dni'] = 67859301 :{mi_diccionario}")
-del mi_diccionario['edad']
-print(f"del mi_diccionario['edad']: {mi_diccionario}")  # Eliminar un elemento del diccionario
-print(f"mi_diccionario.keys(): {mi_diccionario.keys()}")  # Retorna todas las clave como lista
-print(f"mi_diccionario.values(): {mi_diccionario.values()}")  # Retorna todos los valores como lista
-print(f"mi_diccionario.items(): {mi_diccionario.items()}")  # Retorna todos los items en lista
-print(f"'nombre' in mi_diccionario : {'nombre' in mi_diccionario}")  # items existe en diccionario
+del mi_diccionario["edad"]
+print(
+    f"del mi_diccionario['edad']: {mi_diccionario}"
+)  # Eliminar un elemento del diccionario
+print(
+    f"mi_diccionario.keys(): {mi_diccionario.keys()}"
+)  # Retorna todas las clave como lista
+print(
+    f"mi_diccionario.values(): {mi_diccionario.values()}"
+)  # Retorna todos los valores como lista
+print(
+    f"mi_diccionario.items(): {mi_diccionario.items()}"
+)  # Retorna todos los items en lista
+print(
+    f"'nombre' in mi_diccionario : {'nombre' in mi_diccionario}"
+)  # items existe en diccionario
 print(f"mi_diccionario['nombre'] : {mi_diccionario}")
 print(type(mi_diccionario))
 print("\n")
@@ -96,9 +114,9 @@ print("5 - CONJUNTOS ORDENADOS")
 from collections import OrderedDict
 
 mi_ordenado = OrderedDict()
-mi_ordenado['uno'] = 1
-mi_ordenado['dos'] = 2
-mi_ordenado['tres'] = 'tres'
+mi_ordenado["uno"] = 1
+mi_ordenado["dos"] = 2
+mi_ordenado["tres"] = "tres"
 
 print(f"Mi ordenado: {mi_ordenado}")
 print("\n")
@@ -115,8 +133,8 @@ mi_cola.put(3)
 mi_cola.put(4)
 # Conversion implícita de una Dequeue para visualizar
 print(f"Mi cola: {mi_cola.queue}")  # Visualizar elementos
-print(f"Extrae y elimina el elemento mas 'antiguo' mi_cola.get(): {mi_cola.get()}")
-print(f"Extrae y elimina el elemento mas 'antiguo' mi_cola.get(): {mi_cola.get()}")
+print(f"Extrae y elimina el elemento más 'antiguo' mi_cola.get(): {mi_cola.get()}")
+print(f"Extrae y elimina el elemento más 'antiguo' mi_cola.get(): {mi_cola.get()}")
 print(f"Mi cola: {mi_cola.queue}")
 print(f"Mi cola esta vacia?: {mi_cola.empty()}")
 print(type(mi_cola))
@@ -160,7 +178,10 @@ print("\n")
 print("9 - MATRICES (ARRAY)")
 import array
 
-mi_array = array.array('i', [1, 2, 3, 4, 5], )
+mi_array = array.array(
+    "i",
+    [1, 2, 3, 4, 5],
+)
 print(f"Mi array: {mi_array}")
 print(f"mi_array[0] : {mi_array[0]}")  # Acceso a los elementos
 print(f"mi_array.append(6) : {mi_array.append(6)}")
@@ -215,7 +236,9 @@ def mi_agenda():
 
                 while es_valido is False:
                     usuario = generar_input("Ingresa el nombre de usuario:")
-                    telefono = verificar_telefono(generar_input("Telefono del contacto: "))
+                    telefono = verificar_telefono(
+                        generar_input("Telefono del contacto: ")
+                    )
                     if telefono is not None:
                         es_valido = True
                         agenda[usuario] = telefono
@@ -231,17 +254,19 @@ def mi_agenda():
 
                     match option:
                         case "1":
-                            actualizar_usuario(usuario,
-                                               generar_input("Nombre nuevo: "),
-                                               None)
+                            actualizar_usuario(
+                                usuario, generar_input("Nombre nuevo: "), None
+                            )
                         case "2":
-                            actualizar_usuario(usuario,
-                                               None,
-                                               generar_input("Telefono nuevo: "))
+                            actualizar_usuario(
+                                usuario, None, generar_input("Telefono nuevo: ")
+                            )
                         case "3":
-                            actualizar_usuario(usuario,
-                                               generar_input("Nombre nuevo: "),
-                                               generar_input("Telefono nuevo: "))
+                            actualizar_usuario(
+                                usuario,
+                                generar_input("Nombre nuevo: "),
+                                generar_input("Telefono nuevo: "),
+                            )
 
                 else:
                     print(f"No se encuentra {usuario} ")

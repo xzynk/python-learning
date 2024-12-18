@@ -1,4 +1,4 @@
-"""Practica de teoria sobre asincronia"""
+"""Practica de teoría sobre asincronia"""
 
 # La asincronia permite ejecutar tareas concurrentemente es decir que
 # puede ocurrir al simultaneamente pero no necesariamente de forma paralela
@@ -82,7 +82,7 @@ async def faulty_task():
 # Integracion con funciones sincronicas
 def blocking_function():
     time.sleep(2)
-    return "Finalizada la funcion sincrona"
+    return "Finalizada la función sincrona"
 
 
 async def sincronicas():

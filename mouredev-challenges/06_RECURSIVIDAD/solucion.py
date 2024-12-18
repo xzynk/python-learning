@@ -2,7 +2,7 @@
 
 
 def contador(numero):
-    """Imprime numeros desde el parametro hasta 0 usando recursion"""
+    """Imprime números desde el parametro hasta 0 usando recursion"""
     if numero == 0:
         print(numero)
         return

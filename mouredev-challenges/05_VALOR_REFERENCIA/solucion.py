@@ -5,6 +5,7 @@
 # LOS TIPOS INMUTABLES (COMO ENTEROS, FLOTANTES, CADENAS Y TUPLAS)
 # SE COMPORTAN COMO SI SE PASARAN POR VALOR
 
+
 def modificar_valor(x):
     print(f"Valor dentro de la función antes de modificar: {x}")
     x += 10
@@ -24,24 +25,26 @@ def modificar_cadena(s):
 
 MY_CADENA = "Original"
 modificar_cadena(MY_CADENA)
-print(f"Cadena fuera de la funcion: {MY_CADENA}")
+print(f"Cadena fuera de la función: {MY_CADENA}")
 
 
 # POR REFERENCIA
 # LOS TIPOS MUTABLES PUEDE SER MODIFICADOS DESPUÉS DE SER CREADOS
 
+
 def modificar_lista(lst):
     print(f"Lista dentro de la funciona antes de modificar: {lst}")
     lst.append(100)  # Modificamos la lista existente
-    print(f"Lista dentro de la funcion después de modificar: {lst}")
+    print(f"Lista dentro de la función después de modificar: {lst}")
 
 
 lista = [1, 2, 3, 4, 5]
 modificar_lista(lista)
-print(f"Lista fuera de la funcion: {lista}")  # La lista original se ve afectada
+print(f"Lista fuera de la función: {lista}")  # La lista original se ve afectada
 
 
 # EJERCICIO
+
 
 def intercambiar_parametros(param1, param2):
     param1, param2 = param2, param1
@@ -59,5 +62,5 @@ list_a = [1, 2, 3, 4, 5]
 lista_b = [100, 200, 300, 400, 500]
 
 nueva_lista_a, nueva_lista_b = intercambiar_parametros(list_a, lista_b)
-print(f"Listas fuera de la funcion:\n{list_a, lista_b}")
-print(f"Listas modificadas retornadas de la funcion:\n{nueva_lista_a, nueva_lista_b}")
+print(f"Listas fuera de la función:\n{list_a, lista_b}")
+print(f"Listas modificadas retornadas de la función:\n{nueva_lista_a, nueva_lista_b}")

@@ -5,13 +5,13 @@ import re
 # Utilizando tu lenguaje, explora el concepto de expresiones regulares,
 # creando una que sea capaz de encontrar y extraer todos los números de un texto.
 
-STRNUMBERS = "Texto con números, 520123, mas números 112344"
+STRNUMBERS = "Texto con números, 520123, más números 112344"
 justNumbers = re.findall(r"\d+", STRNUMBERS)
 print(justNumbers)
 
 
 # Crea 3 expresiones regulares (a tu criterio) capaces de:
-# Creo un funcion que validara segun un patron
+# Creo un función que validara segun un patron
 def validator(check, pattern, label="Value"):
     for value in check:
         try:

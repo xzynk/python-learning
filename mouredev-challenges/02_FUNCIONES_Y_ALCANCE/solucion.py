@@ -15,7 +15,7 @@ saludo()
 
 
 def saludo_personalizado(nombre):
-    """Aquí, la funcion toma un parametro nombre, lo utiliza en el print, pero no devuelve nada"""
+    """Aquí, la función toma un parametro nombre, lo utiliza en el print, pero no devuelve nada"""
     print(f"Hola, {nombre}")
 
 
@@ -26,7 +26,7 @@ saludo_personalizado("Mia")
 
 
 def suma(a, b):
-    """Esta funcion toma dos parametros, los suma y devuelve el resultado"""
+    """Esta función toma dos parametros, los suma y devuelve el resultado"""
     return a + b
 
 
@@ -34,6 +34,7 @@ print(f"Sumamos 5 + 3 : {suma(5, 3)}")
 
 
 # Funcion con multiples valores de retorno
+
 
 def operaciones_basicas(a, b):
     """Esta funciona realiza varias operaciones con dos parametros y devuelve una tupla
@@ -57,8 +58,8 @@ print(div)
 
 # Funcion con numero indefinido de parámetros
 def sum_all(*args):
-    """Aqui *args permite pasar un numero variable de argumentos. La funcion
-    sumara todos los numeros que reciba"""
+    """aquí *args permite pasar un numero variable de argumentos. La función
+    sumara todos los números que reciba"""
     return sum(args)
 
 
@@ -67,7 +68,7 @@ print(f"Sumamos 1 + 2 + 3 = {sum_all(1, 2, 3)}")
 
 # Funcion con argumentos nombrados indefinidos
 def print_kwargs(**kwargs):
-    """Este tipo de funcion aceptar un número indefinido de argumentos valor-clave"""
+    """Este tipo de función aceptar un número indefinido de argumentos valor-clave"""
     for key, value in kwargs.items():
         print(f"{key}: {value}")
 
@@ -75,17 +76,17 @@ def print_kwargs(**kwargs):
 print_kwargs(a=1, b=2, c=3)
 
 # Funciones anónimas
-# Las funciones lambda son útiles cuando necesitas una funcion pequeña y anónima
+# Las funciones lambda son útiles cuando necesitas una función pequeña y anónima
 double = lambda x: x * 2
 print(double(10))
 
 
-# Funcion dentro de funcion
+# Funcion dentro de función
 def operacion_compleja(a, b):
     """También llamadas nested function o funciones anidadas"""
 
     def potencia(a, b):
-        return a ** b
+        return a**b
 
     def division_entera(a, b):
         return a // b
@@ -98,7 +99,7 @@ print(f"Ejecutamos 24**2 y 24//2 {operacion_compleja(24, 2)}")
 
 # Funciones de Orden Superior
 def aplicar_operacion(func, a, b):
-    """Esta es una funcion de orden superior, como argumento le pasamos el nombre de una funcion"""
+    """Esta es una función de orden superior, como argumento le pasamos el nombre de una función"""
     return func(a, b)
 
 
@@ -122,14 +123,14 @@ def funcion_global():
 
 print(f"Valor inicial de numero: {numero}")
 funcion_local()
-print(f"Valor global de numero despues de la funcion local: {numero}")
+print(f"Valor global de numero despues de la función local: {numero}")
 funcion_global()
-print(f"Valor global de numero despues de la funcion global: {numero}")
+print(f"Valor global de numero despues de la función global: {numero}")
 print("\n")
 
 # Funciones ya creadas en Python
 # 1 - print(): Imprime objetos en la consola
-print("Usando una funcion print")
+print("Usando una función print")
 # 2 - len(): Devuelve la longitud de un objeto (listas, string, etc)
 print(f"len([1,2,3]) : {len([1, 2, 3])}")
 print(f"len(\"Hello\") : {len('Hello')}")
@@ -159,10 +160,14 @@ for index, value in enumerate([1, 2, 3, 4, 5]):
     print(f"{index}: {value}")
 # 11 - zip(): Combina varios iterables, creando tuplas con sus elementos correspondientes
 print(f"zip([1,2,3],['a','b','c']) : {list(zip([1, 2, 3], ['a', 'b', 'c']))}")
-# 12 - map(): Aplica una funcion a todos los elementos de un iterable
-print(f"map(lambda x: x * 2, [1, 2, 3, 4, 5]) : {list(map((lambda x: x * 2), [1, 2, 3, 4, 5]))}")
-# 13 - filter(): Filtra los elementos de un iterable usando una funcion
-print(f"list(filter(lambda x: x > 2, [1, 2, 3, 4, 5]) : {list(filter(lambda x: x > 2, [1, 2, 3, 4, 5]))})")
+# 12 - map(): Aplica una función a todos los elementos de un iterable
+print(
+    f"map(lambda x: x * 2, [1, 2, 3, 4, 5]) : {list(map((lambda x: x * 2), [1, 2, 3, 4, 5]))}"
+)
+# 13 - filter(): Filtra los elementos de un iterable usando una función
+print(
+    f"list(filter(lambda x: x > 2, [1, 2, 3, 4, 5]) : {list(filter(lambda x: x > 2, [1, 2, 3, 4, 5]))})"
+)
 # 14 - sorted(): Devuelve una lista ordenada de un iterable
 print(f"sorted([5, 4, 1, 2, 3]) : {sorted([5, 4, 1, 2, 3])}")
 # 15 - all(), any():
@@ -177,7 +182,7 @@ print(f"isinstance(5, int) : {isinstance(5, int)}")
 # 18 - open(): Abre un archivo para lectura o escritura
 print("open(): Abre un archivo para lectura o escritura")
 # 19 - help(): Muestra la documentacion de un objeto
-# 20 - dir(): Muestra los atributos y metodos de un objeto
+# 20 - dir(): Muestra los atributos y métodos de un objeto
 print(dir(str))
 # 21- reversed(): Invierte el orden de una lista
 print(f"reversed([1, 2, 3, 4, 5]) : {list(reversed([1, 2, 3, 4, 5]))}")
@@ -187,15 +192,14 @@ print("\n")
 # EJERCICIO FINAL
 def imprimir_con_reemplazos(firstStr, secondStr):
     """
-    Imprime numeros del 1 al 100 si es multiplo de 3 lo reemplaza con el primer string
+    Imprime números del 1 al 100 si es multiplo de 3 lo reemplaza con el primer string
     si es multiple de 5 con el segundo string y si es multiplo de ambos muestra los dos string
     :param firstStr:
     :param secondStr:
-    :return: Los numeros del 1 al 100 con el reemplazo de String
+    :return: Los números del 1 al 100 con el reemplazo de String
     """
     count = 0
     for val in range(1, 101):
-
         if val % 3 == 0 and val % 5 == 0:
             print(firstStr + secondStr)
         elif val % 3 == 0:

@@ -1,7 +1,7 @@
 """HERENCIA Y POLIMORFISMO"""
 
 # LA HERENCIA ES UN MECANIMOS QUE PERMITE QUE UNA
-# CLASE HERE LOS ATRIBUTOS Y METODOS DE OTRA CLASE
+# CLASE HERE LOS ATRIBUTOS Y métodoS DE OTRA CLASE
 
 
 class Animal:
@@ -91,7 +91,7 @@ class Empleados:
         return "Mi cargo es de:"
 
     def show_code(self):
-        return f"Mi codigo es: {self.codigo}"
+        return f"Mi código es: {self.código}"
 
 
 class Gerente(Empleados):

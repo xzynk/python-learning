@@ -14,10 +14,10 @@ class ExampleClass:
         print(f"Hola yo soy {self.name} y me apellido {self.lastname}")
 
     def mostrar_codigo(self):
-        print(f"Mi codigo es {self._user_code}")
+        print(f"Mi código es {self._user_code}")
 
     def mostrar_supercode(self):
-        print(f"Mi codigo super secreto es: {self.__supercode}")
+        print(f"Mi código super secreto es: {self.__supercode}")
 
 
 class Stack:

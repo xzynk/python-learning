@@ -73,13 +73,13 @@ def navegacion_historial():
         match action:
             case "adelante":
                 if es_limite_superior():
-                    print("No puedes ir mas adelante")
+                    print("No puedes ir más adelante")
                 else:
                     desplazar_indice(1)
                     retornar_posicion()
             case "atras":
                 if es_limite_inferior():
-                    print("No se puede ir mas atras")
+                    print("No se puede ir más atras")
                 else:
                     desplazar_indice(-1)
                     retornar_posicion()
