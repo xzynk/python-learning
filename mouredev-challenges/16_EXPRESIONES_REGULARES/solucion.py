@@ -11,7 +11,7 @@ print(justNumbers)
 
 
 # Crea 3 expresiones regulares (a tu criterio) capaces de:
-# Creo un función que validara segun un patron
+# Creo una función que validara según un patron
 def validator(check, pattern, label="Value"):
     for value in check:
         try:

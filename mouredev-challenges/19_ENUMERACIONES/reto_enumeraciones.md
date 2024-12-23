@@ -1,12 +1,9 @@
 # 19 ENUMERACIONES
 
 **EJERCICIO:**  
-Empleando tu lenguaje, explora la definición del tipo de dato  
-que sirva para definir enumeraciones (Enum).  
-Crea un Enum que represente los días de la semana del lunes  
-al domingo, en ese orden. Con ese enumerado, crea una operación  
-que muestre el nombre del día de la semana dependiendo del número entero  
-utilizado (del 1 al 7).
+Empleando tu lenguaje, explora la definición del tipo de dato que sirva para definir enumeraciones (Enum).  
+Crea un Enum que represente los días de la semana del lunes al domingo, en ese orden. Con ese enumerado, crea una
+operación que muestre el nombre del día de la semana dependiendo del número entero utilizado (del 1 al 7).
 
 ---
 
